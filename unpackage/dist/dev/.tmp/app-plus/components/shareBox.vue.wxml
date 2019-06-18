@@ -1,0 +1,1 @@
+<template name="4f96f4dc"><view class="_view M4f96f4dc"><view class="_view M4f96f4dc margin-top padding-lg"><button class="_button M4f96f4dc bg-green text-white" bindtap="handleProxy" data-eventid="{{'4f96f4dc-0'}}" data-comkey="{{$k}}">下载APP，加入净醛！</button></view></view></template>

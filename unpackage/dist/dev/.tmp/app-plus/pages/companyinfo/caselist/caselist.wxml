@@ -1,0 +1,2 @@
+<import src="./caselist.vue.wxml" />
+    <template is="ec301fd2" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,2 @@
+<import src="./reportshow.vue.wxml" />
+    <template is="36087b4a" data="{{ ...$root['0'], $root }}"/>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"shareJQSystem","entryPagePath":"pages/index/index.html","page":{"pages/index/index.html":{"window":{"usingComponents":{}}},"pages/basics/layout.html":{"window":{"usingComponents":{}}},"pages/basics/background.html":{"window":{"usingComponents":{}}},"pages/basics/text.html":{"window":{"usingComponents":{}}},"pages/basics/icon.html":{"window":{"usingComponents":{}}},"pages/basics/button.html":{"window":{"usingComponents":{}}},"pages/basics/design.html":{"window":{"usingComponents":{}}},"pages/basics/tag.html":{"window":{"usingComponents":{}}},"pages/basics/avatar.html":{"window":{"usingComponents":{}}},"pages/basics/progress.html":{"window":{"usingComponents":{}}},"pages/basics/shadow.html":{"window":{"usingComponents":{}}},"pages/basics/loading.html":{"window":{"usingComponents":{}}},"pages/component/bar.html":{"window":{"usingComponents":{}}},"pages/component/nav.html":{"window":{"usingComponents":{}}},"pages/component/list.html":{"window":{"usingComponents":{}}},"pages/component/card.html":{"window":{"usingComponents":{}}},"pages/component/form.html":{"window":{"usingComponents":{}}},"pages/component/timeline.html":{"window":{"usingComponents":{}}},"pages/component/chat.html":{"window":{"usingComponents":{}}},"pages/component/swiper.html":{"window":{"usingComponents":{}}},"pages/component/modal.html":{"window":{"usingComponents":{}}},"pages/component/steps.html":{"window":{"usingComponents":{}}},"pages/plugin/indexes.html":{"window":{"usingComponents":{}}},"pages/plugin/animation.html":{"window":{"usingComponents":{}}},"pages/plugin/drawer.html":{"window":{"usingComponents":{}}},"pages/plugin/verticalnav.html":{"window":{"usingComponents":{}}},"pages/companyinfo/companyinfo.html":{"window":{"usingComponents":{}}},"pages/sealist/sealist.html":{"window":{"usingComponents":{},"navigationBarTitleText":"公海列表"}},"pages/reportshow/reportshow.html":{"window":{"usingComponents":{},"navigationBarTitleText":"检测报告"}},"pages/companyinfo/caselist/caselist.html":{"window":{"usingComponents":{},"navigationBarTitleText":"案例列表"}},"pages/companyinfo/casedetail/casedetail.html":{"window":{"usingComponents":{},"navigationBarTitleText":"案例详情"}},"pages/projectdetail/projectdetail.html":{"window":{"usingComponents":{}}}},"global":{"window":{"navigationBarBackgroundColor":"#0081ff","navigationBarTitleText":"ColorUi for UniApp","navigationStyle":"custom","navigationBarTextStyle":"white"}},"tabBar":{"color":"","selectedColor":"","backgroundColor":"","borderStyle":"black","list":[],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/index","pages/basics/layout","pages/basics/background","pages/basics/text","pages/basics/icon","pages/basics/button","pages/basics/design","pages/basics/tag","pages/basics/avatar","pages/basics/progress","pages/basics/shadow","pages/basics/loading","pages/component/bar","pages/component/nav","pages/component/list","pages/component/card","pages/component/form","pages/component/timeline","pages/component/chat","pages/component/swiper","pages/component/modal","pages/component/steps","pages/plugin/indexes","pages/plugin/animation","pages/plugin/drawer","pages/plugin/verticalnav","pages/companyinfo/companyinfo","pages/sealist/sealist","pages/reportshow/reportshow","pages/companyinfo/caselist/caselist","pages/companyinfo/casedetail/casedetail","pages/projectdetail/projectdetail"],"subPackages":[],"usingComponents":{},"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.0.1"}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

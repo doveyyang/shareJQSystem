@@ -1,0 +1,2 @@
+<import src="./sealist.vue.wxml" />
+    <template is="354c0552" data="{{ ...$root['0'], $root }}"/>
