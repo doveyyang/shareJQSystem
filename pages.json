@@ -129,6 +129,10 @@
 				"navigationBarTitleText": "案例详情"
 			}
         }
+        ,{
+            "path" : "pages/projectdetail/projectdetail",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"mp-alipay": {

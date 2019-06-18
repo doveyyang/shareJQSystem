@@ -1,5 +1,8 @@
 <template>
 	<view class="mine-container">
+		<cu-custom :isBack="true"><block slot="backText"></block>
+			<block slot="content">公司详情</block>
+		</cu-custom>	
 		<!-- 头部显示 -->		
 		<view class="avertar-box"  :style="'background:url('+backgroundImage+') no-repeat'">
 			<!-- 登录用户 -->
@@ -12,7 +15,7 @@
 						</text>
 					</view>
 					<view class="username">
-						{{username}} 
+						{{username}}
 					</view>
 					<view class="phone">
 						<text class="iconfont cuIcon-phone"></text>
