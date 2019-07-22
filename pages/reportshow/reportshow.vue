@@ -4,7 +4,8 @@
 		<view class="header text-lg padding-sm text-bold">
 			<view class="text-center">
 				<!-- 四川省绵阳市高新区繁华广场5单元4号门 -->
-				{{address.addressurl}}{{address.addressinfo}}
+				来自 {{address.addressurl}}
+				<!-- {{address.addressinfo}} -->
 			</view>
 			<view class="text-center">
 				检测报告

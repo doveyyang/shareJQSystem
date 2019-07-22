@@ -93,10 +93,15 @@
 				</view>
 				<view class="info flex flex-direction justify-around ">
 					<view class="project">						
-						<text class="name ">{{nickname}}</text>
+						<text class="name ">
+							***
+							<!-- {{nickname}} -->
+						</text>
 					</view>
 					<view class="date " v-show="mobile">
-						<text class="iconfont cuIcon-phone"></text> {{mobile}} 
+						<text class="iconfont cuIcon-phone"></text> 
+						***
+						<!-- {{mobile}}  -->
 					</view>
 				</view>
 				<view class="btn-box flex flex-direction justify-around" v-show="!mobile">

@@ -2,7 +2,7 @@
 const USERS_KEY = 'USERS_KEY';
 const STATE_KEY = 'STATE_KEY';
 const API_TOKEN = 'a935f146542257018700e139720407520cee23e1';
-const BASEURL = 'http://lost.jade2707.top';
+const BASEURL = 'http://booking.jingru88.com';
 
 const getUsers = function () {
     let ret = '';
