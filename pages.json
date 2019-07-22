@@ -133,6 +133,10 @@
             "path" : "pages/projectdetail/projectdetail",
             "style" : {}
         }
+        ,{
+            "path" : "pages/articledetail/articledetail",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"mp-alipay": {
