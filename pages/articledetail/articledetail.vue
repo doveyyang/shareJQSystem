@@ -84,6 +84,9 @@
 		},
 		mounted() {
 			let self = this;
+			uni.showLoading({
+				
+			})
 			uni.request({
 				url:service.BASEURL+'/home/index/getArticleinfo',
 				method:"POST",
@@ -98,6 +101,9 @@
 							title:res.data.msg
 						})
 					}
+				},
+				complete() {
+					uni.hideLoading()
 				}
 			})
 		},

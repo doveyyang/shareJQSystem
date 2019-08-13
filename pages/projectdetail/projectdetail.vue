@@ -240,7 +240,9 @@
 		methods:{
 			initData(){
 				let self = this;		
-				
+				uni.showLoading({
+					
+				})
 				uni.request({
 					url:service.BASEURL+'/home/share/high_seas_info',
 					method:"POST",
@@ -273,6 +275,9 @@
 							self.mobile = info.mobile;
 							self.com_id = info.com_id;
 						}
+					},
+					complete() {
+						uni.hideLoading()
 					}
 				})
 			},

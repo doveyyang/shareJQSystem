@@ -171,6 +171,9 @@
 			
 			console.log('hasLogin',this.hasLogin);
 				// 获取用户信息 保存到vuex中
+				uni.showLoading({
+					
+				})
 				uni.request({
 					url:service.BASEURL+'/home/share/ditails',
 					method:"POST",
@@ -206,6 +209,9 @@
 							}
 							self.addressurl = info.addressurl;
 						}
+					},
+					complete() {
+						uni.hideLoading()
 					}
 				})
 				

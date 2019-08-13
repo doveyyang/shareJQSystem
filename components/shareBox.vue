@@ -18,6 +18,10 @@
 				uni.showToast({
 					title:'下载APP.....'
 				})
+				// uni.
+				// #ifdef H5
+				window.location.href="http://jingquan.jingru88.com";
+				// #endif
 			}
 		}
 	}

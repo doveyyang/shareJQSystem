@@ -73,7 +73,10 @@
 			
 		},
 		methods: {
-			getServerData(){				
+			getServerData(){	
+				uni.showLoading({
+					
+				})
 				uni.request({
 					url: service.BASEURL+"/home/share/export_data",
 					method:"POST",
@@ -97,6 +100,9 @@
 					fail: () => {
 						console.log("网络错误，小程序端请检查合法域名");
 					},
+					complete() {
+						uni.hideLoading()
+					}
 				});
 			},
 			updateData(list){
@@ -168,8 +174,21 @@
 					extra: {
 						column: {
 						  width: _self.cWidth*_self.pixelRatio*0.45/chartData.categories.length
+						},
+						// 标记线
+						markLine:{
+							data:[{
+								value:0.10,
+							},
+							{
+								value:0.20,
+							},{
+								value:0.60,
+							}]
 						}
-					  }
+					  },
+					enableMarkLine:true, // 允许标记线
+					  
 				});
 			}
 		}
