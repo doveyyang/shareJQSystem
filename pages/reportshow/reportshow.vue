@@ -11,6 +11,18 @@
 				检测报告
 			</view>
 		</view>
+		<view  class="margin-top">
+			<view class="qiun-bg-white qiun-title-bar qiun-common-mt" >
+				<view>委托方：{{address.nickname}}</view>
+				<view>电话：{{address.account}}</view>
+				<view>地址：{{address.addressurl}}{{address.addressinfo}}</view>
+				<view>检测点数：{{address.order_id}}</view>
+				<view>单价：{{address.company_money}} 元/点</view>
+				<view>总价：{{address.money}} 元（不含税）</view>
+				<view>检测单位：{{address.company_name}}</view>
+				<view>检测标准：室内空气质量检测（GB/T18883-2002）</view>
+			</view>
+		</view>
 		<view  v-for="(item,index) in serverList" :key="index" class="margin-top">
 			
 			<view class="qiun-bg-white qiun-title-bar qiun-common-mt" >
@@ -85,6 +97,7 @@
 					},
 					success: function(res) {
 						_self.address = res.data.data.address;
+						console.log(_self.address)
 						// // console.log(res.data.data)
 						//下面这个根据需要保存后台数据，我是为了模拟更新柱状图，所以存下来了
 						_self.serverData=res.data.data;
